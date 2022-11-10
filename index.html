@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Heebo:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+
+   <title>My Guess The Number</title>
+</head>
+<body>
+   <main>
+      <div class="screen-1">
+         <h2>Guess the number</h2>
+         <p>Try to find the number between 0 and 10</p>
+
+         <form>
+            <input type="number" maxlength="1" autofocus required>
+            <button>Try to hit</button>
+         </form>
+      </div>
+
+      <div class="screen-2 hide">
+         <h2>Congratulations!</h2>
+         <p>You got it right</p>
+         <button class="btnScreen2">Play again</button>
+      </div>
+
+      <div class="screen-3 hide">
+         <h2>Oh, you're wrong!</h2>
+         <button class="btnScreen3">Try again</button>
+      </div>
+   </main>
+   
+   <script src="js/index.js" type="module"></script>
+</body>
+</html>
